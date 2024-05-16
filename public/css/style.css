@@ -1,0 +1,48 @@
+* {
+    border: 1px black solid;
+}
+.border-nav {
+    box-shadow: 1px 1px #d9d9d9, -1px -1px #d9d9d9;
+}
+.Toast {
+    animation: ToastAnimation 4s ease forwards;
+    position: fixed;
+    z-index: 999;
+}
+@keyframes ToastAnimation {
+    0% {
+        transform: translateY(100px);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(0);
+    }
+
+    70% {
+        transform: translateY(0);
+    }
+
+    80% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    90% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        display: hidden;
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
