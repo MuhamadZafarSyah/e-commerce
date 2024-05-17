@@ -44,7 +44,7 @@ class AdminDashboardProductController extends Controller
             'rating' => 'nullable',
             'id_category' => 'required',
             'discount' => 'nullable',
-            'image' => 'file|image|max:15360',
+            'image' => 'file|image|max:15360|required',
         ]);
 
         $image = null;

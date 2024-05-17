@@ -1,8 +1,8 @@
 @if ($paginator->hasPages())
     <nav role="navigation" aria-label="{{ __('Pagination Navigation') }}" class="flex items-center w-full justify-between">
 
-        <div class="flex justify-between w-full items-center">
-            <div>
+        <div class="flex justify-end md:justify-between w-full items-center">
+            <div class="hidden md:flex ">
                 <p class="text-sm text-gray-700 leading-5 dark:text-gray-400">
                     {!! __('Showing') !!}
                     @if ($paginator->firstItem())

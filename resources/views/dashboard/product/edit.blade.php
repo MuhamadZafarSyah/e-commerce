@@ -53,6 +53,7 @@
                         <div class="absolute text-xs text-red-500">{{ $message }}</div>
                     @enderror
                 </div>
+
                 <div>
                     <label for="discount"
                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Discount</label>
@@ -63,6 +64,7 @@
                         <div class="absolute text-xs text-red-500">{{ $message }}</div>
                     @enderror
                 </div>
+
                 <div>
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="image">Product
                         Image</label>
@@ -80,6 +82,26 @@
                     <p class="mt-1 text-sm  text-gray-900 dark:text-white" id="file_input_help">PNG, JPG or JPEG (MAX.
                         15mb).</p>
                     @error('image')
+                        <div class="absolute text-xs text-red-500">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div>
+                    <label for="rating"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Rating</label>
+                    <select id="rating" name="rating" value="{{ old('rating', $product->rating) }}"
+                        class="@error('rating') border-red-700 border @enderror bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected>1
+                        </option>
+                        <option>2
+                        </option>
+                        <option>3
+                        </option>
+                        <option>4
+                        </option>
+                        <option>5
+                        </option>
+                    </select>
+                    @error('rating')
                         <div class="absolute text-xs text-red-500">{{ $message }}</div>
                     @enderror
                 </div>

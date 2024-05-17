@@ -13,7 +13,7 @@
                         class="@error('product_name') border-red-700 border @enderror bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Type product name" required>
                     @error('product_name')
-                        <div class="absolute text-xs text-red-500">{{ $message }}</div>
+                        <div class=" text-xs text-red-500">{{ $message }}</div>
                     @enderror
                 </div>
                 <div class="w-full">
@@ -22,7 +22,7 @@
                         class="@error('stock') border-red-700 border @enderror bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Product stock" required>
                     @error('stock')
-                        <div class="absolute text-xs text-red-500">{{ $message }}</div>
+                        <div class=" text-xs text-red-500">{{ $message }}</div>
                     @enderror
                 </div>
                 <div class="w-full">
@@ -31,7 +31,7 @@
                         class="@error('price') border-red-700 border @enderror bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Rp ...." required>
                     @error('price')
-                        <div class="absolute text-xs text-red-500">{{ $message }}</div>
+                        <div class=" text-xs text-red-500">{{ $message }}</div>
                     @enderror
                 </div>
                 <div>
@@ -45,7 +45,7 @@
                         @endforeach
                     </select>
                     @error('id_category')
-                        <div class="absolute text-xs text-red-500">{{ $message }}</div>
+                        <div class=" text-xs text-red-500">{{ $message }}</div>
                     @enderror
                 </div>
                 <div>
@@ -55,7 +55,7 @@
                         class="@error('discount') border-red-700 border @enderror bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Rp ...">
                     @error('discount')
-                        <div class="absolute text-xs text-red-500">{{ $message }}</div>
+                        <div class=" text-xs text-red-500">{{ $message }}</div>
                     @enderror
                 </div>
                 <div>
@@ -70,7 +70,7 @@
                     <p class="mt-1 text-sm  text-gray-900 dark:text-white" id="file_input_help">PNG, JPG or JPEG (MAX.
                         15mb).</p>
                     @error('image')
-                        <div class="absolute text-xs text-red-500">{{ $message }}</div>
+                        <div class=" text-xs text-red-500">{{ $message }}</div>
                     @enderror
                 </div>
 
@@ -91,7 +91,7 @@
                         </option>
                     </select>
                     @error('rating')
-                        <div class="absolute text-xs text-red-500">{{ $message }}</div>
+                        <div class=" text-xs text-red-500">{{ $message }}</div>
                     @enderror
                 </div>
                 <div class="sm:col-span-2">
@@ -100,8 +100,8 @@
                     <textarea id="description" rows="8" value="{{ old('discount') }}" name="description"
                         class="@error('discount') border-red-700 border @enderror block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Your description here"></textarea>
-                    @error('discount')
-                        <div class="absolute text-xs text-red-500">{{ $message }}</div>
+                    @error('description')
+                        <div class=" text-xs text-red-500">{{ $message }}</div>
                     @enderror
                 </div>
             </div>
