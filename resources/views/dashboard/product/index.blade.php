@@ -92,7 +92,7 @@
                                 <th scope="col" class="p-4">Product</th>
                                 <th scope="col" class="p-4">Category</th>
                                 <th scope="col" class="p-4">Stock</th>
-                                <th scope="col" class="p-4">Terjual</th>
+                                <th scope="col" class="p-4">Rating</th>
                                 <th scope="col" class="p-4">Action</th>
                             </tr>
                         </thead>
@@ -125,7 +125,11 @@
                                             </div>
                                         </td>
                                         <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            7.09
+                                            <div class="star">
+                                                @for ($i = 0; $i < $product->rating; $i++)
+                                                    <i class="fas fa-star"></i>
+                                                @endfor
+                                            </div>
                                         </td>
                                         <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                             <div class="flex items-center space-x-4">

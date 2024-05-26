@@ -17,19 +17,21 @@ Route::get('/', function () {
 
 Route::get('/all-products', function () {
     return view('all-products', [
-        'products' => Product::latest()->filter(request(['search']))->with('category')->paginate(8)->withQueryString(),
+        'products' => Product::latest()->filter(request(['search']))->with('category')->paginate(8),
         'categories' => Category::all()
     ]);
 });
 
 Route::get('/auth', [AuthController::class, 'login']);
 Route::get('/admin/dashboard', function () {
+    return view('dashboard.index', [
+        'products' => Product::count(),
+        'categories' => Category::count(),
 
-    return view('dashboard.index');
+    ]);
 });
 Route::resource('/admin/dashboard/product', AdminDashboardProductController::class);
 
 Route::resource('/admin/dashboard/category', AdminDashboardCategoryController::class)->except('show');
 
-Route::get('/admin/dashboard/order', [OrderController::class, 'index']);
 

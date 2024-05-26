@@ -4,10 +4,7 @@
     <!-- Content header -->
     <div class="flex items-center justify-between px-4 py-4 border-b lg:py-6 dark:border-primary-darker">
         <h1 class="text-2xl font-semibold">Dashboard</h1>
-        <a href="https://github.com/Kamona-WD/kwd-dashboard" target="_blank"
-            class="px-4 py-2 text-sm text-white rounded-md bg-primary hover:bg-primary-dark focus:outline-none focus:ring focus:ring-primary focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark">
-            View on github
-        </a>
+
     </div>
 
     <!-- Content -->
@@ -19,12 +16,10 @@
                 <div>
                     <h6
                         class="text-xs font-medium leading-none tracking-wider text-gray-500 uppercase dark:text-primary-light">
-                        Value
+                        Target
                     </h6>
-                    <span class="text-xl font-semibold">$30,000</span>
-                    <span class="inline-block px-2 py-px ml-2 text-xs text-green-500 bg-green-100 rounded-md">
-                        +4.4%
-                    </span>
+                    <span class="text-xl font-semibold">+ Rp 10.000.000</span>
+
                 </div>
                 <div>
                     <span>
@@ -44,7 +39,7 @@
                         class="text-xs font-medium leading-none tracking-wider text-gray-500 uppercase dark:text-primary-light">
                         Users
                     </h6>
-                    <span class="text-xl font-semibold">50,021</span>
+                    <span class="text-xl font-semibold">+100</span>
                     <span class="inline-block px-2 py-px ml-2 text-xs text-green-500 bg-green-100 rounded-md">
                         +2.6%
                     </span>
@@ -65,12 +60,10 @@
                 <div>
                     <h6
                         class="text-xs font-medium leading-none tracking-wider text-gray-500 uppercase dark:text-primary-light">
-                        Orders
+                        Products
                     </h6>
-                    <span class="text-xl font-semibold">45,021</span>
-                    <span class="inline-block px-2 py-px ml-2 text-xs text-green-500 bg-green-100 rounded-md">
-                        +3.1%
-                    </span>
+                    <span class="text-xl font-semibold">{{ $products }}</span>
+
                 </div>
                 <div>
                     <span>
@@ -88,12 +81,10 @@
                 <div>
                     <h6
                         class="text-xs font-medium leading-none tracking-wider text-gray-500 uppercase dark:text-primary-light">
-                        Tickets
+                        Categories
                     </h6>
-                    <span class="text-xl font-semibold">20,516</span>
-                    <span class="inline-block px-2 py-px ml-2 text-xs text-green-500 bg-green-100 rounded-md">
-                        +3.1%
-                    </span>
+                    <span class="text-xl font-semibold">{{ $categories }}</span>
+
                 </div>
                 <div>
                     <span>

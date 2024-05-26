@@ -2,7 +2,7 @@
 
 @section('dashboard_content')
     <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
-        <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Add a new product</h2>
+        <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Add a new Category</h2>
         <form action="/admin/dashboard/category" method="POST" class="mx-auto md:ml-4 mb-0 mt-8 max-w-2xl space-y-4">
             @csrf
             <div>

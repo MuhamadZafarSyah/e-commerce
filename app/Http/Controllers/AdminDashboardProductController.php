@@ -38,7 +38,7 @@ class AdminDashboardProductController extends Controller
     {
         $validate = $request->validate([
             'product_name' => 'required|min:5|max:255|unique:products,product_name',
-            'description' => 'required|min:5|max:255',
+            'description' => 'required|min:5',
             'price' => 'required',
             'stock' => 'required',
             'rating' => 'nullable',
